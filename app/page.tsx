@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import Hero from '@/components/Layout/Hero'
+import Hero from "@/components/Layout/Hero"
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gray-200/20">
       <Hero />
     </main>
   )
