@@ -29,5 +29,5 @@ export default function RootLayout({
 
 // TODO
 // Crear Hero
-// Crear boton de ChangeTheme con FramerMotion -> Animar SVG con Framer-Motion
+// Crear boton de ChangeTheme con FramerMotion -> Animar SVG Circulo con Framer-Motion
 // Crear pagina de 404 con layout
