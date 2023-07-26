@@ -22,7 +22,7 @@ const Header = (props: Props) => {
         {!isSmallScreen && <Link href="/draw">Draw</Link>}
 
         <nav className="flex flex-row items-center gap-4">
-          <ChangeTheme />
+          {/* <ChangeTheme /> */}
           <Link href="/login">
             <UserCircleIcon className="w-10 h-10" />
           </Link>
