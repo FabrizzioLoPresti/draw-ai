@@ -32,7 +32,7 @@ const Hero = (props: Props) => {
       <h1 className='text-4xl lg:text-7xl font-bold text-center'>
         AI Image Generator that lets you draw and then uses AI to <span className='text-blue-600'>generate</span> a new image based on your <span className='text-blue-600'>drawing</span>.
       </h1>
-      <div className='grid grid-cols-4 gap-12'>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-12'>
         {cards.map((card, index) => (
           <Card key={index} card={card} />
         ))}

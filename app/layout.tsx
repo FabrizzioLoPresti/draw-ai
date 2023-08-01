@@ -28,6 +28,6 @@ export default function RootLayout({
 }
 
 // TODO
-// Acomodar Hero -> Responsive
 // Boton de ChangeTheme con FramerMotion -> Agregar Funcionaldiad (MVP)
 // Crear pagina de 404 con layout
+// Modificar titulo de la pagina en cada pagina (tomar estado anterior) -> Pestaña del navegador

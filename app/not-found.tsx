@@ -1,13 +1,15 @@
-import React from 'react'
+import RootLayout from "./layout"
 
 type Props = {}
 
-const NotFound = (props: Props) => {
+const Page = (props: Props) => {
   return (
-    <div>
-      Error
-    </div>
+    <RootLayout>
+      <div className='max-w-7xl mx-auto py-5 px-5 xl:px-0'>
+        <h1 className='text-4xl font-bold'>404</h1>
+      </div>
+    </RootLayout>
   )
 }
 
-export default NotFound
+export default Page

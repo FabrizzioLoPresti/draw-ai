@@ -15,9 +15,9 @@ const Header = (props: Props) => {
   return (
     <header className="w-full sticky top-0 z-10 bg-gray-200/20 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex flex-row items-center justify-between py-5 px-5 xl:px-0">
-        <div className="flex flex-row items-center gap-4">
+        <Link href='/' className="flex flex-row items-center gap-4">
           <PaintBrushIcon className="w-10 h-10" />
-        </div>
+        </Link>
 
         {!isSmallScreen && <Link href="/draw">Draw</Link>}
 
