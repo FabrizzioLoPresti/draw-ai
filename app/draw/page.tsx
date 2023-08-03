@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import DrawOptionsCard from '@/components/Draw/DrawOptionsCard'
 
 type Props = {}
 
@@ -8,12 +9,14 @@ export const metadata: Metadata = {
 
 const Page = (props: Props) => {
   return (
-    <div className='max-w-7xl mx-auto py-5 px-5 xl:px-0 grid grid-cols-4'>
+    <div className='grid grid-cols-4 gap-6'>
       <div className='col-span-1'>
-        <h1 className='text-4xl font-bold'>Draw</h1>
+        <DrawOptionsCard />
       </div>
       <div className='col-span-3'>
-        <h1 className='text-4xl font-bold'>Draw</h1>
+        <h2 className='text-4xl font-bold'>
+          Discover
+        </h2>
       </div>
     </div>
   )

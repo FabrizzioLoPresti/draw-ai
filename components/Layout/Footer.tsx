@@ -1,15 +1,15 @@
 import Link from "next/link";
-import { PaintBrushIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-blue-600 py-12">
-      <div className="max-w-7xl mx-auto text-white px-5 xl:px-0 md:grid md:grid-cols-6 space-y-8 md:space-y-0">
+    <footer className="bg-orange-800 py-12">
+      <div className="max-w-screen-2xl mx-auto text-white px-5 xl:px-0 md:grid md:grid-cols-6 space-y-8 md:space-y-0">
         <div className="col-span-2 space-y-3">
           <Link href="/" className="flex flex-row gap-2 items-center">
-            <PaintBrushIcon className="w-10 h-10" />
+            <Image src="/LogoCat.svg" width={60} height={60} alt="Logo Draw AI" />
             <p>Draw with AI</p>
           </Link>
           <p>
