@@ -7,14 +7,6 @@
     @apply bg-gray-100;
   }
 
-  .cardDrawOptions {
-    @apply px-2 py-4 border-b border-b-gray-400/40 flex flex-row gap-2 items-center justify-between cursor-pointer;
-  }
-
-  .cardDrawOptions > div {
-    @apply flex flex-row gap-2 items-center;
-  }
-
   ::-webkit-scrollbar {
     width: 10px;
   }

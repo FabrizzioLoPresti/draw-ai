@@ -8,6 +8,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
+import DrawOption from "./DrawOption";
 
 type Props = {};
 
@@ -20,41 +21,35 @@ const DrawOptionsCard = (props: Props) => {
           <div className="px-2 py-2">Edit</div>
         </div>
         <div>
-          <div className="cardDrawOptions">
-            <div>
-              <PencilIcon className="w-6 h-6" />
-              <span>Prompt</span>
-            </div>
-            <ChevronDownIcon className="w-6 h-6" />
-          </div>
-          <div className="cardDrawOptions">
-            <div>
-              <PhotoIcon className="w-6 h-6" />
-              <span>Image to Image</span>
-            </div>
-            <ChevronDownIcon className="w-6 h-6" />
-          </div>
-          <div className="cardDrawOptions">
-            <div>
-              <PaintBrushIcon className="w-6 h-6" />
-              <span>Draw your image</span>
-            </div>
-            <ChevronDownIcon className="w-6 h-6" />
-          </div>
-          <div className="cardDrawOptions">
-            <div>
-              <AdjustmentsHorizontalIcon className="w-6 h-6" />
-              <span>Generation Config</span>
-            </div>
-            <ChevronDownIcon className="w-6 h-6" />
-          </div>
-          <div className="cardDrawOptions">
-            <div>
-              <Cog6ToothIcon className="w-6 h-6" />
-              <span>Upscale & Enhance</span>
-            </div>
-            <ChevronDownIcon className="w-6 h-6" />
-          </div>
+          <DrawOption
+            icon={<PencilIcon className="w-6 h-6" />}
+            text="Prompt"
+          >
+          </DrawOption>
+
+          <DrawOption
+            icon={<PhotoIcon className="w-6 h-6" />}
+            text="Image to Image"
+          >
+          </DrawOption>
+
+          <DrawOption
+            icon={<PaintBrushIcon className="w-6 h-6" />}
+            text="Draw your image"
+          >
+          </DrawOption>
+
+          <DrawOption
+            icon={<AdjustmentsHorizontalIcon className="w-6 h-6" />}
+            text="Generation Config"
+          >
+          </DrawOption>
+
+          <DrawOption
+            icon={<Cog6ToothIcon className="w-6 h-6" />}
+            text="Upscale & Enhance"
+          >
+          </DrawOption>
         </div>
       </div>
 
