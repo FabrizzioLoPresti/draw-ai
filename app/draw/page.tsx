@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 const Page = (props: Props) => {
   return (
-    <div className='grid grid-cols-4 gap-6'>
-      <div className='col-span-1'>
+    <div className='md:grid md:grid-cols-4 md:gap-6 space-y-10 md:space-y-0'>
+      <div className='md:col-span-1'>
         <DrawOptionsCard />
       </div>
-      <div className='col-span-3'>
+      <section className='md:col-span-3'>
         <h2 className='text-4xl font-bold'>
           Discover
         </h2>
-      </div>
+      </section>
     </div>
   )
 }

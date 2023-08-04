@@ -18,6 +18,14 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-orange-600/80;
   }
+  
+  .input {
+    @apply px-2 py-3 rounded-md border border-gray-400/30;
+  }
+
+  textarea.input {
+    @apply resize-none h-32;
+  }
 }
 
 /* :root {

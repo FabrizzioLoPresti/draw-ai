@@ -8,12 +8,14 @@ type Props = {
   children: React.ReactNode;
   icon?: React.ReactNode;
   text?: string;
+  enabled: boolean;
 };
 
 const drawOptionVariants = {
   // agregar ease: "easeInOut" para que sea mas suave
+  initial: { opacity: 0, height: 0, transition: { duration: 0.3, ease: "easeOut" } },
   open: { opacity: 1, height: "auto", transition: { duration: 0.3, ease: "easeOut" } },
-  closed: { opacity: 0, height: 0, transition: { duration: 0.3 } },
+  closed: { opacity: 0, height: 0, transition: { duration: 0.3, ease: "easeOut" } },
 };
 
 const iconVariants = {
@@ -21,16 +23,16 @@ const iconVariants = {
   closed: { rotate: 0 },
 };
 
-const DrawOption = ({ children, icon, text }: Props) => {
+const DrawOption = ({ children, icon, text, enabled }: Props) => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen((prev) => !prev);
+    if (enabled) setOpen(!open);
   };
 
   return (
-    <div className="px-2 py-4 border-b border-b-gray-400/40 cursor-pointer" onClick={handleOpen}>
-      <div className="flex flex-row gap-2 items-center justify-between">
+    <div className="border-b border-b-gray-400/40">
+      <div className={`px-2 py-4 flex flex-row gap-2 items-center justify-between ${enabled ? 'cursor-pointer' : 'cursor-not-allowed bg-gray-200/40'}`} onClick={handleOpen}>
         <div className="flex flex-row gap-4">
           {icon}
           <span>{text}</span>
@@ -50,10 +52,9 @@ const DrawOption = ({ children, icon, text }: Props) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="my-4"
+            className="overflow-clip pt-2 pb-4 px-2 text-sm"
           >
            {children}
-           Prueba de contenido largo largo largo pa llevarla al cielo y asi rome el hielo mami que mierda
           </motion.div>
         )}
       </AnimatePresence>
