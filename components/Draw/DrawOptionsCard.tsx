@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import DrawOption from "./DrawOption";
 import PromptComponent from "./PromptComponent";
+import GenerationConfigComponent from "./GenerationConfigComponent";
 
 type Props = {};
 
@@ -50,6 +51,7 @@ const DrawOptionsCard = (props: Props) => {
             text="Generation Config"
             enabled={true}
           >
+            <GenerationConfigComponent />
           </DrawOption>
 
           <DrawOption
