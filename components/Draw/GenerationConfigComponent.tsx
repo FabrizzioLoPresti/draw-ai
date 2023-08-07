@@ -1,26 +1,29 @@
+'use client'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import RangeOptions from '../Layout/RangeOptions'
-
+import { useAppSelector } from '@/hooks/useReduxStore'
+import { setNumberImages } from '@/store/features/optionSlice'
 
 type Props = {}
 
 const GenerationConfigComponent = (props: Props) => {
-
+  const { numberImages } = useAppSelector(state => state.options.options)
 
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col">
         <span className="text-xs font-extralight">
-          Number of images to generate: {}
+          Number of images to generate: {numberImages}
         </span>
         <RangeOptions 
           min={1}
           max={10}
           step={1}
           disabled={false}
-          key={1}
-          value={1}
+          key={numberImages}
+          value={numberImages}
         />
       </div>
 

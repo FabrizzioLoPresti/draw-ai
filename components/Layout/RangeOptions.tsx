@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from "react"
+import { useAppDispatch } from "@/hooks/useReduxStore"
+import { setNumberImages } from "@/store/features/optionSlice"
 
 type Props = {
   min?: number
@@ -8,17 +10,17 @@ type Props = {
   step?: number
   disabled?: boolean
   value?: number
-  setValue?: React.Dispatch<React.SetStateAction<number>>
 }
 
 const RangeOptions = ({ min, max, step, disabled, value }: Props) => {
+  const dispatch = useAppDispatch()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-
+    dispatch(setNumberImages(Number(e.target.value)))
   }
 
   return (
-    <input type="range" min={min} max={max} step={step} value={value} disabled={disabled} onChange={handleChange} className="w-full" />
+    <input type="range" min={min} max={max} step={step} disabled={disabled} value={value} onChange={handleChange} className="w-full" />
   )
 }
 
