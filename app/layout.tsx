@@ -37,4 +37,3 @@ export default function RootLayout({
 // Boton de ChangeTheme con FramerMotion -> Agregar Funcionaldiad (MVP)
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) -> Pestaña del navegador
 // Responsively
-// Agregar en Options Card top: 20px por ejemplo para que al aplicar sticky no solape con Navbar
