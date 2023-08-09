@@ -52,9 +52,11 @@ const DrawOption = ({ children, icon, text, enabled }: Props) => {
             initial="closed"
             animate="open"
             exit="closed"
-            className="overflow-clip pt-2 pb-4 px-2 text-sm"
+            className="overflow-clip"
           >
-           {children}
+           <div className=" pt-2 pb-4 px-2 text-sm">
+            {children}
+           </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -9,6 +9,7 @@ interface OptionState {
   negativePrompt: string
   options: {
     numberImages: number
+    aspectRatio: string
     width: number
     height: number
     cfgScale: number
@@ -24,11 +25,12 @@ const initialState: OptionState = {
   negativePrompt: '',
   options: {
     numberImages: 1,
-    width: 512,
-    height: 512,
-    cfgScale: 1,
-    steps: 1,
-    sampler: 'bilinear',
+    aspectRatio: 'default',
+    width: 640,
+    height: 640,
+    cfgScale: 7,
+    steps: 25,
+    sampler: 'DPM Solver++',
     seed: 0,
   },
 }
@@ -45,6 +47,9 @@ const optionSlice = createSlice({
     },
     setNumberImages(state, action: PayloadAction<number>) {
       state.options.numberImages = action.payload
+    },
+    setAspectRatio(state, action: PayloadAction<string>) {
+      state.options.aspectRatio = action.payload
     },
     setWidth(state, action: PayloadAction<number>) {
       state.options.width = action.payload
@@ -71,6 +76,7 @@ export const {
   setPrompt,
   setNegativePrompt,
   setNumberImages,
+  setAspectRatio,
   setWidth,
   setHeight,
   setCfgScale,
