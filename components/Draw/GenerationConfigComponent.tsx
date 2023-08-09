@@ -3,13 +3,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import RangeOptions from '../Layout/RangeOptions'
-import { useAppSelector } from '@/hooks/useReduxStore'
+import { useAppSelector, useAppDispatch } from '@/hooks/useReduxStore'
 import { setNumberImages } from '@/store/features/optionSlice'
 
 type Props = {}
 
 const GenerationConfigComponent = (props: Props) => {
   const { numberImages } = useAppSelector(state => state.options.options)
+  const dispatch = useAppDispatch()
 
   return (
     <div className="flex flex-col gap-6">
@@ -24,6 +25,7 @@ const GenerationConfigComponent = (props: Props) => {
           disabled={false}
           key={numberImages}
           value={numberImages}
+          onChange={(e) => dispatch(setNumberImages(Number(e.target.value)))}
         />
       </div>
 

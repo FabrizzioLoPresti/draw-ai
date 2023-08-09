@@ -10,17 +10,15 @@ type Props = {
   step?: number
   disabled?: boolean
   value?: number
+  onChange?: (e: any) => {
+    payload: number;
+    type: "options/setNumberImages";
+  }
 }
 
-const RangeOptions = ({ min, max, step, disabled, value }: Props) => {
-  const dispatch = useAppDispatch()
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(setNumberImages(Number(e.target.value)))
-  }
-
+const RangeOptions = ({ min, max, step, disabled, value, onChange }: Props) => {
   return (
-    <input type="range" min={min} max={max} step={step} disabled={disabled} value={value} onChange={handleChange} className="w-full" />
+    <input type="range" min={min} max={max} step={step} disabled={disabled} value={value} onChange={onChange} className="w-full" />
   )
 }
 
