@@ -30,4 +30,4 @@ export default function RootLayout({
 // TODO
 // Boton de ChangeTheme con FramerMotion -> Agregar Funcionaldiad (MVP)
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
-// Responsively
+// Responsively -> Arregloar Settings Card Margin Top con navbar
