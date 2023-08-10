@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import RangeOptions from "../Layout/RangeOptions";
+import RangeOptions from "./RangeOptions";
 import { useAppSelector, useAppDispatch } from "@/hooks/useReduxStore";
 import {
   setNumberImages,

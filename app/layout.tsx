@@ -1,9 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { StoreProvider } from "@/store/provider";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
+import Layout from "@/components/Layout/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <StoreProvider>
-          <Header />
-          <div className="max-w-screen-2xl mx-auto py-5 px-5 xl:px-0">
-            {children}
-          </div>
-          <Footer />
-        </StoreProvider>
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
@@ -35,5 +29,5 @@ export default function RootLayout({
 
 // TODO
 // Boton de ChangeTheme con FramerMotion -> Agregar Funcionaldiad (MVP)
-// Modificar titulo de la pagina en cada pagina (tomar estado anterior) -> Pestaña del navegador
+// Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
 // Responsively
