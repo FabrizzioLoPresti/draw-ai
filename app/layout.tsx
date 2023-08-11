@@ -32,3 +32,4 @@ export default function RootLayout({
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
 // Responsively -> Arregloar Settings Card Margin Top con navbar
 // Image to Text -> MVP
+// Agregar en Hero texto Dinamico con Librerio de Portfolio

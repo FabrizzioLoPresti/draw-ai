@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
             <p>Draw with AI</p>
           </Link>
           <p>
-            Draw with AI is a web app that lets you draw and then uses AI to
+            Mishi AI is a web app that lets you draw and then uses AI to
             generate a new image based on your drawing.
           </p>
         </div>
