@@ -32,4 +32,6 @@ export default function RootLayout({
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
 // Responsively -> Arregloar Settings Card Margin Top con navbar
 // Image to Text -> MVP
+// Generador de Prompts -> ChatGPT API
 // Agregar en Hero texto Dinamico con Librerio de Portfolio
+// Arreglar que al ir a /draw con navbar oculta esta aparece junto con la pagina scrolleada
