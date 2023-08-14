@@ -9,8 +9,9 @@ type Props = {};
 
 const MainContent = (props: Props) => {
   return (
-    <main className="md:grid grid-cols-5 grid-rows-3 space-y-5 md:space-y-0 items-center">
+    <main className="md:grid grid-cols-5 grid-rows-3 space-y-5 md:space-y-0 items-center py-24">
       <div className="col-start-1 col-end-4 row-start-1 row-end-4 space-y-6">
+        <h2 className="text-4xl text-orange-600 font-bold">Mishi AI is here!</h2>
         <p>
           Welcome to our innovative AI image generator based on{" "}
           <span className="text-orange-600 font-bold">Stable Diffusion</span>{" "}
@@ -23,6 +24,11 @@ const MainContent = (props: Props) => {
           </span>
           .
         </p>
+
+        <Link href="/draw" className="button">
+          Start Drawing
+        </Link>
+
         <div>
           <h3 className="font-bold text-lg text-orange-600">
             Call to Action (CTA):
@@ -34,10 +40,6 @@ const MainContent = (props: Props) => {
             </span>
           </p>
         </div>
-
-        <Link href="/draw" className="button">
-          Start Drawing
-        </Link>
       </div>
 
       <div className="col-start-3 col-end-5 row-start-1 row-end-3 flex items-center justify-center md:justify-end">
@@ -56,7 +58,10 @@ const MainContent = (props: Props) => {
             />
           </div>
           <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-end px-9 pb-3 text-center transition-all duration-500 group-hover:translate-y-0">
-            <p className="font-dmserif text-base font-light text-white">Bee flying out of a glass jar in a green and red leafy basket, glass and lens flare, diffuse lighting elegant</p>
+            <p className="font-dmserif text-base font-light text-white">
+              Bee flying out of a glass jar in a green and red leafy basket,
+              glass and lens flare, diffuse lighting elegant
+            </p>
           </div>
         </div>
       </div>
@@ -75,7 +80,9 @@ const MainContent = (props: Props) => {
             />
           </div>
           <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-end px-9 pb-3 text-center transition-all duration-500 group-hover:translate-y-0">
-            <p className="font-dmserif text-base font-light text-white">Glowing jellyfish floating through a foggy forest at twilight</p>
+            <p className="font-dmserif text-base font-light text-white">
+              Glowing jellyfish floating through a foggy forest at twilight
+            </p>
           </div>
         </div>
       </div>
