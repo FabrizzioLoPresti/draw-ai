@@ -4,7 +4,7 @@ import DrawOptionsCard from '@/components/Draw/DrawOptionsCard'
 type Props = {}
 
 export const metadata: Metadata = {
-  title: `Draw with AI ${String.fromCodePoint(0x1f4bb)} | Drawing`,
+  title: `Mishi AI ${String.fromCodePoint(0x1f4bb)} | Drawing`,
 }
 
 const Page = (props: Props) => {

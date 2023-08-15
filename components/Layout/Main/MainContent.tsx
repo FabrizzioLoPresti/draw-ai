@@ -9,7 +9,7 @@ type Props = {};
 
 const MainContent = (props: Props) => {
   return (
-    <main className="md:grid grid-cols-5 grid-rows-3 space-y-5 md:space-y-0 items-center py-24">
+    <main className="md:grid grid-cols-5 grid-rows-3 space-y-5 md:space-y-0 items-center pt-12 pb-24">
       <div className="col-start-1 col-end-4 row-start-1 row-end-4 space-y-6">
         <h2 className="text-4xl text-orange-600 font-bold">Mishi AI is here!</h2>
         <p>
