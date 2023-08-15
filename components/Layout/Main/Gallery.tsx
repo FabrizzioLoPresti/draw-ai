@@ -13,6 +13,7 @@ const Gallery = (props: Props) => {
       <div className='md:grid grid-cols-4 w-full gap-4'>
         {imagesGallery.map((image, index) => (
           <Image
+            as={ReactImage}
             key={index}
             src={image.url}
             alt={image.alt}
