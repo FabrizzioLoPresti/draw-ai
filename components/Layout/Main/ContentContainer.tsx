@@ -1,7 +1,7 @@
 "use client";
 
 import { Image } from "@nextui-org/react";
-import ReactImage from "next/image";
+import NextImage from "next/image";
 
 type Props = {
   children: React.ReactNode;
@@ -17,13 +17,14 @@ const ContentContainer = ({ children, urlIMagen, alt, isReversed }: Props) => {
         {children}
       </div>
       <Image
-        as={ReactImage}
+        as={NextImage}
         isBlurred
         width={800}
         height={600}
         src={urlIMagen}
         alt={alt}
         className="rounded-lg max-w-fit max-h-fit md:w-full md:h-full object-cover m-5 mx-auto"
+        loading="lazy"
       />
     </section>
   );

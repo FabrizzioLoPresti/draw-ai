@@ -56,7 +56,7 @@ const MainContent = (props: Props) => {
             />
           </div>
           <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-end px-9 pb-3 text-center transition-all duration-500 group-hover:translate-y-0">
-            <p className="font-dmserif text-base font-light text-white">
+            <p className="font-dmserif text-sm font-light text-white">
               Bee flying out of a glass jar in a green and red leafy basket,
               glass and lens flare, diffuse lighting elegant
             </p>
@@ -76,7 +76,7 @@ const MainContent = (props: Props) => {
             />
           </div>
           <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-end px-9 pb-3 text-center transition-all duration-500 group-hover:translate-y-0">
-            <p className="font-dmserif text-base font-light text-white">
+            <p className="font-dmserif text-sm font-light text-white">
               Glowing jellyfish floating through a foggy forest at twilight
             </p>
           </div>
