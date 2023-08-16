@@ -44,8 +44,6 @@ const MainContent = (props: Props) => {
 
       <div className="col-start-3 col-end-5 row-start-1 row-end-3 flex items-center justify-center md:justify-end">
         <div className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg overflow-hidden">
-          {" "}
-          {/* Overflow-hidden */}
           <div className="transition-transform duration-500 group-hover:scale-125 rounded-lg">
             <NextImage
               width={240}
