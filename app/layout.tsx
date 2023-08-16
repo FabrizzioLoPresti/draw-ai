@@ -32,9 +32,8 @@ export default function RootLayout({
 // Image to Text -> MVP
 // Gif Generator -> MVP (Picsart Gif Maker API)
 // Generador de Prompts -> ChatGPT API
+// Button newsletter componente funcionalidad -> Firebase
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
-// Responsively -> Arregloar Settings Card Margin Top con navbar
+// Responsively -> Arreglar Settings Card Margin Top con navbar
 // Arreglar que al ir a /draw con navbar oculta esta aparece junto con la pagina scrolleada
 // Arreglar detalle de Imagenes Hover
-// Button newsletter componente funcionalidad
-// Funcionalidad galeria de imagenes main page

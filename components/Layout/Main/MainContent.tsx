@@ -47,9 +47,7 @@ const MainContent = (props: Props) => {
           {" "}
           {/* Overflow-hidden */}
           <div className="transition-transform duration-500 group-hover:scale-125 rounded-lg">
-            <Image
-              as={NextImage}
-              isBlurred
+            <NextImage
               width={240}
               height={240}
               src="https://res.cloudinary.com/dqaun4x76/image/upload/v1691758869/bee_kgejjp.jpg"
@@ -69,9 +67,7 @@ const MainContent = (props: Props) => {
       <div className="col-start-4 col-end-6 row-start-2 row-end-4 flex items-center justify-center md:justify-end">
         <div className="group relative cursor-pointer items-center justify-center transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-lg overflow-hidden">
           <div className="transition-transform duration-500 group-hover:scale-125 rounded-lg">
-            <Image
-              as={NextImage}
-              isBlurred
+            <NextImage
               width={240}
               height={240}
               src="https://res.cloudinary.com/dqaun4x76/image/upload/v1691758865/glow_jellyfish_x19lvs.jpg"
