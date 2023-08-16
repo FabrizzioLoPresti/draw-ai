@@ -44,6 +44,7 @@ const Gallery = (props: Props) => {
         onOpenChange={onOpenChange}
         backdrop="blur"
         placement="center"
+        size="2xl"
       >
         <ModalContent>
           {(onClose) => (
