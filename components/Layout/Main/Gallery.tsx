@@ -35,7 +35,6 @@ const Gallery = (props: Props) => {
             height={640}
             className="rounded-lg mb-4 md:mb-0 cursor-pointer"
             onClick={() => handleOpen(image.url)}
-            loading="lazy"
           />
         ))}
       </div>
