@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
 
   return (
     <section className="h-screen flex flex-col items-center justify-center max-w-5xl mx-auto px-5 md:px-0 gap-16">
-      <h1 className="text-4xl lg:text-7xl font-bold text-center leading-relaxed">
+      <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold text-center leading-relaxed">
         AI Image Generator that lets you draw and then uses AI to{" "}
         <span className="text-orange-600">generate</span> a new image based on
         your {' '}

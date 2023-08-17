@@ -30,7 +30,9 @@ export default function RootLayout({
 // TODO
 // Detalles Responsively
 // Arreglar detalle de Imagenes Hover
-// Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
 // Arreglar que al ir a /draw con navbar oculta esta aparece junto con la pagina scrolleada
+
+// Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
+
 // Boton de ChangeTheme con FramerMotion -> Agregar Funcionaldiad (MVP)
 // Button newsletter componente funcionalidad -> Firebase
