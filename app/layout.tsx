@@ -28,9 +28,8 @@ export default function RootLayout({
 }
 
 // TODO
-// Detalles Responsively
 // Arreglar detalle de Imagenes Hover
-// Arreglar que al ir a /draw con navbar oculta esta aparece junto con la pagina scrolleada
+// Arreglar que al ir a /draw con navbar oculta esta aparece junto con la pagina scrolleada (solo pasa en web)
 
 // Modificar titulo de la pagina en cada pagina (tomar estado anterior) en Layout.tsx -> Pestaña del navegador
 
