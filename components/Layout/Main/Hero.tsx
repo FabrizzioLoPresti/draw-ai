@@ -20,8 +20,7 @@ const Hero = (props: Props) => {
         AI Image Generator that lets you draw and then uses AI to{" "}
         <span className="text-orange-600">generate</span> a new image based on
         your {' '}
-        <span className="mr-3 text-orange-600 font-bold">{text}</span>
-        <Cursor cursorColor="#f75d0a"/>.
+        <span className="mr-3 text-orange-600 font-bold block md:inline">{text} <Cursor cursorColor="#f75d0a"/></span>
       </h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
         {cards.map((card, index) => (
