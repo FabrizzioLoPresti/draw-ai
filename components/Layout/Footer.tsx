@@ -6,10 +6,15 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <footer className="bg-orange-800 py-12">
-      <div className="max-w-screen-2xl mx-auto text-white px-5 xl:px-0 md:grid md:grid-cols-6 space-y-8 md:space-y-0">
+      <div className="max-w-screen-sm mx-auto text-white px-5 sm:px-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto 2xl:px-0 md:grid md:grid-cols-6 space-y-8 md:space-y-0">
         <div className="col-span-2 space-y-3">
           <Link href="/" className="flex flex-row gap-2 items-center">
-            <Image src="/LogoCat.svg" width={60} height={60} alt="Logo Draw AI" />
+            <Image
+              src="/LogoCat.svg"
+              width={60}
+              height={60}
+              alt="Logo Draw AI"
+            />
             <p>Draw with AI</p>
           </Link>
           <p>

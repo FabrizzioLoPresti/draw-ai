@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
     <NextUIProvider>
       <StoreProvider>
         <Header />
-        <div className="max-w-screen-2xl mx-auto py-5 px-5 xl:px-0">
+        <div className="max-w-screen-sm mx-auto my-5 px-5 sm:px-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto 2xl:px-0">
           {children}
         </div>
         <Footer />
